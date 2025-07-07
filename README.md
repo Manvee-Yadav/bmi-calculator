@@ -1,12 +1,37 @@
-# React + Vite
+# 🧮 BMI Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, multi-page BMI Calculator built with React, Vite, Zustand, React Router, and jsPDF.
 
-Currently, two official plugins are available:
+This app lets users calculate their BMI using various units, get personalized diet & exercise recommendations (veg & non-veg), view BMI history, and download/share their BMI report.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Calculate BMI with different units (feet/inches/cm and kg/lbs)  
+✅ Personalized diet & exercise recommendations based on BMI (veg & non-veg)  
+✅ BMI history with timestamps (stored in localStorage)  
+✅ Download BMI report as PDF (with recommendations) using jsPDF  
+✅ Share BMI report to clipboard  
+✅ Nutrition & exercise detail page with meal plans, exercise tips, videos & links  
+✅ Multi-page navigation with React Router DOM
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React + Vite
+- 📦 Zustand (state management)
+- 🛣 React Router DOM (routing)
+- 📝 jsPDF (PDF generation)
+- ✏️ HTML5, CSS3
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Manvee-Yadav/bmi-calculator.git
+cd bmi-calculator
