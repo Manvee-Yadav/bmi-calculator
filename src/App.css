@@ -1,0 +1,297 @@
+/* Global & Body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #667eea;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header + Navbar */
+header {
+  background: #475bad;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Page layout containers */
+.home-page, .history-page, .bmiInfo-page, .nutrition-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+  margin-top: 0;
+  color: #4c5bd4;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* BMI Form styles */
+.bmi-form {
+  margin-bottom: 20px;
+}
+
+.bmi-form .form-group {
+  margin-bottom: 15px;
+}
+
+.bmi-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.bmi-form input, .bmi-form select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.bmi-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.bmi-form input[type="submit"] {
+  background: #667eea;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.bmi-form input[type="submit"]:hover {
+  background: #4c5bd4;
+}
+
+/* BMI Result styles */
+.bmi-result {
+  text-align: center;
+}
+
+.bmi-result div {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.bmi-result h3 {
+  margin-bottom: 10px;
+}
+
+/* Personalized Recommendation Styles */
+.bmi-result .result-recommend h3 {
+  font-size: 1.2rem;
+  color: #4c5bd4;
+  margin: 5px 0 6px;
+}
+
+.bmi-result ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 6px 0 12px;
+}
+
+.bmi-result ul li {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 1.1 rem;
+  text-align: left;
+  background-color: #55555511;
+  padding:10px;
+
+}
+
+.result-details p{
+  background-color: #55555511;
+  font-size: 1 rem;
+  padding: 10px;
+  margin-top: 0px;
+  border-radius: 5px;
+  
+}
+
+.download, .share{
+  background-color: #158708b5;
+  padding:7px;
+  cursor: pointer;
+  color:#f9f7f7;
+  border-radius: 5px;
+  border: none;  
+  margin-right: 5px;
+}
+
+.download:hover{
+  background-color: #158708d7;
+}
+
+.share{
+  background-color: #4d5bcce3;
+}
+
+.share:hover{
+  background-color: #4d5ccc;
+}
+
+
+/* BMI History styles */
+.bmi-history {
+  margin-top: 20px;
+}
+
+.bmi-history button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.bmi-history button:hover {
+  background: #c0392b;
+}
+
+.bmi-history div {
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* BMI Info styles */
+.bmi-info {
+  margin-top: 20px;
+}
+
+.bmi-info h3 {
+  margin-bottom: 12px;
+  color: #4c5bd4;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f9fa;
+  padding: 10px;
+  border-left: 6px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.category-item .range {
+  font-weight: 600;
+}
+
+.category-item .category {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Nutrition Page Styles */
+.nutrition-page {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  animation: fadeIn 0.5s ease;
+}
+
+.nutrition-page h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.nutrition-page section {
+  margin-bottom: 25px;
+}
+
+.nutrition-page h3 {
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 8px;
+}
+
+.nutrition-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.nutrition-page ul li {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.nutrition-page a {
+  color: #777778;
+  text-decoration: none;
+}
+
+.nutrition-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 5px 0;
+  }
+
+  .home-page, .history-page, .bmiInfo-page, .nutrition-page {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
