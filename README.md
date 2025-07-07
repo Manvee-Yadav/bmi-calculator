@@ -35,3 +35,12 @@ Clone the repository:
 ```bash
 git clone https://github.com/Manvee-Yadav/bmi-calculator.git
 cd bmi-calculator
+
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+Then open your browser and visit:
+http://localhost:5173
