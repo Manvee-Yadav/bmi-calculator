@@ -8,7 +8,7 @@ export const useBmiStore = create((set) => ({
     const timestamp = new Date().toLocaleString();
     const item = { ...newResult, timestamp };
     const updatedHistory = [...state.history, item];
-    localStorage.setItem('bmiHistory', JSON.stringify(updatedHistory));
+    localStorage.setItem('bmiHistory', JSON.stringify(updatedHistory)); // JSON. stringify() is used to convert a JavaScript object into a JSON 
     return { currentResult: newResult, history: updatedHistory };   //you return an object with the new state you want the store to have.
     //In Zustand, whatever object you return from set becomes the new state (or partial state).
   }),
@@ -21,7 +21,7 @@ export const useBmiStore = create((set) => ({
   loadHistory: () => {
     const saved = localStorage.getItem('bmiHistory');
     if (saved) {
-      set({ history: JSON.parse(saved) });
+      set({ history: JSON.parse(saved) }); //JSON. parse() is used to convert JSON data into a JavaScript object
     }
   }
 }));
@@ -39,5 +39,3 @@ set((state) => {
 })
 When you use the function form, you must return the new (or updated) part of the state.
 */
-
-
